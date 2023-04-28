@@ -51,6 +51,7 @@ async function sendMessage(recipientPhoneNumber, message) {
     console.log('Message sent successfully');
     console.log(response);
   } catch (error) {
+    console.error(error)
     console.error(`Failed to send message. Status code: ${error.response.status}`);
     console.error(error.response.data);
   }
